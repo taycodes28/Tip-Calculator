@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="card">
+
+    <h1>Tip Calculator</h1>
+
+    <label>Bill Amount ($)</label>
+    <input id="billAmount" type="number" placeholder="e.g. 45.00" />
+
+    <br /><br />
+
+    <label>Tip Percentage (%)</label>
+    <input id="tipPercent" type="number" placeholder="e.g. 20" />
+
+    <br /><br />
+    <button class="preset-btn" onclick="setTip(15)">15%</button></button>
+    <button class="preset-btn" onclick="setTip(18)">18%</button>
+  <button class="preset-btn" onclick="setTip(20)">20%</button>
+  <br><br>
+
+
+    <button class="calculate-btn" id="calculateBtn" onclick="calculateTip()">Calculate Tip</button>
+
+    <br /><br />
+
+    <p id="result">Your tip will appear here.</p>
+</div>
+    <script src="tip.js"></script>
+  </body>
+</html>
